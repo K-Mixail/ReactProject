@@ -1,0 +1,23 @@
+.myBtn {
+    margin: 15px;
+    padding: 5px 10px;
+    color: rgb(158, 19, 19);
+    font-size: 16px;
+    font-weight: 600;
+    background: #8ad3e4;
+    border: 1px solid #A8A2A2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    border: 1.5px solid #3b3b3b;
+    font-weight: 600;
+}
+
+.myBtn:disabled {
+    border:none;
+    background-color: #cecac7;
+    cursor: not-allowed;
+    font-weight: 400;
+}
