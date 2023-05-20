@@ -6,8 +6,7 @@ import MyButton from "../UI/button/MyButton";
 
 function Test() {
 
-  //создадим состояние с массивом вопросов:
-  const [questions, setQuestions] = useState ([
+  const questions = [
     {
       id: 1,
       title: 'Сколько основных планет находится в Солнечной системе?',
@@ -36,9 +35,9 @@ function Test() {
       "спутник",
       "астероид",
       "камета",
-      ],
+      ]
     }
-  ])
+  ]
 
   // let rightAnswers = [1,2,3]; 
 
@@ -56,21 +55,21 @@ function Test() {
   //   document.querySelector(".show__answer").textContent `'это {s}`
   // }
   
-  const CheckAnswer = () => {
-    // if (changeHandler() === 1) {
-    //   document.querySelector(".show__answer").textContent `Да`
-    // } else {
-    //   document.querySelector(".show__answer").textContent `Нет`
-    // } 
-  }
+  // const CheckAnswer = () => {
+  //   if (<Question value /> === 1) {
+  //     document.querySelector(".show__answer").textContent = `Да`;
+  //   } else {
+  //     document.querySelector(".show__answer").textContent = `Нет`;
+  //   } 
+  // }
 
   return (
     <div className="App">
       <Header/>
       {questions.map(question =>
-        <Question question={question} key={question.id}/>
+        <Question question={question} key={question.id} />
       )}
-      <MyButton onClick={CheckAnswer} style={{marginLeft: '30%'}}>Узнать результат</MyButton> 
+      { <MyButton /*onClick={CheckAnswer}*/ style={{marginLeft: '30%'}}>Узнать результат</MyButton>  }
       <p className="show__answer"></p> 
     </div>
   );

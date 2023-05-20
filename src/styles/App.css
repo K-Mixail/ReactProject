@@ -89,3 +89,14 @@ body {
     margin: 50px;
     color: rgb(190, 14, 14);
 }
+
+.question__answer {
+    margin-right: 5px;
+}
+
+.api__answer {
+    color: green;
+    font-size: 16px;
+    line-height: 130%; 
+    font-weight: 700; 
+}
